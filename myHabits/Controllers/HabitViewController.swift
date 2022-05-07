@@ -9,7 +9,7 @@ import UIKit
 
 class HabitViewController: UIViewController{
 
-    weak var delegate:HabitDetalsViewDeligate?
+    weak var delegate:HabitDetailsViewDeligate?
 
     private var isNew: Bool = true
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HabitDetailsHederView: UITableViewHeaderFooterView {
+class HabitDetailsHeaderView: UITableViewHeaderFooterView {
 
     private let title: UILabel = {
         $0.toAutoLayout()

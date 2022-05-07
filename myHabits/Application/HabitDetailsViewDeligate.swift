@@ -6,6 +6,6 @@
 //
 
 import UIKit
-protocol HabitDetalsViewDeligate: AnyObject {
+protocol HabitDetailsViewDeligate: AnyObject {
     func close ()
 }

@@ -14,7 +14,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
     var headline :UILabel = {
         $0.toAutoLayout()
         $0.font = UIFont(name: "SFProDisplay-Semibold", size: 17)
-        $0.text = "Привычка"
+        $0.numberOfLines = 0
         $0.textColor = .black
         return $0
     } (UILabel())
@@ -22,7 +22,6 @@ class HabitCollectionViewCell: UICollectionViewCell {
     let caption :UILabel = {
         $0.toAutoLayout()
         $0.font = UIFont(name: "SFProText-Regular", size: 12)
-        $0.text = "Каждый день в "
         $0.textColor = .systemGray2
         return $0
     } (UILabel())
@@ -30,7 +29,6 @@ class HabitCollectionViewCell: UICollectionViewCell {
     let footnote :UILabel = {
         $0.toAutoLayout()
         $0.font = UIFont(name: "SFProText-Regular", size: 13)
-        $0.text = "Счетчик: "
         $0.textColor = .systemGray
         return $0
     } (UILabel())
@@ -55,9 +53,10 @@ class HabitCollectionViewCell: UICollectionViewCell {
         }
         self.index = index
         headline.text = habit.name
+        headline.textColor = habit.color
         caption.text = habit.dateString
-        footnote.text = "счетчик \(habit.trackDates.count)"
-        doneButton.tintColor = HabitsStore.shared.habits[self.index - 1].color
+        footnote.text = "Счетчик: \(habit.trackDates.count)"
+        doneButton.tintColor = habit.color
         if habit.isAlreadyTakenToday {
             doneButton.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
         } else {
@@ -77,6 +76,16 @@ class HabitCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+        setNeedsLayout()
+        layoutIfNeeded()
+        let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
+        var frame = layoutAttributes.frame
+        frame.size.height = ceil(size.height)
+        layoutAttributes.frame = frame
+        return layoutAttributes
+    }
+
     func layout() {
 
         contentView.addSubviews(headline, caption, footnote, doneButton)
@@ -84,7 +93,7 @@ class HabitCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             headline.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
             headline.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            headline.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20)
+            headline.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -103)
         ])
         
         NSLayoutConstraint.activate([
@@ -108,5 +117,4 @@ class HabitCollectionViewCell: UICollectionViewCell {
         ])
     }
 }
-
 

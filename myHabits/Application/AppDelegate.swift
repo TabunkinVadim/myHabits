@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
+        window?.overrideUserInterfaceStyle = .light
         UINavigationBar.appearance().tintColor = UIColor(named: "Purple Color")
 
         let navBarAppearance = UINavigationBarAppearance()

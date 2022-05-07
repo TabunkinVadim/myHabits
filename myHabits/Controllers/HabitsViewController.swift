@@ -30,17 +30,10 @@ class HabitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
-
         navigationController?.navigationBar.backgroundColor = UIColor(red: 0.976, green: 0.976, blue: 0.976, alpha: 1)
-//        navigationController?.viewSafeAreaInsetsDidChange()
         view.backgroundColor = UIColor(red: 0.976, green: 0.976, blue: 0.976, alpha: 1)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action:#selector(addButom(_:)))
         navigationController?.navigationBar.prefersLargeTitles = true
-//        navigationItem.largeTitleDisplayMode = .automatic
-//        navigationItem.
         navigationItem.title = "Сегодня"
         layout()
     }
@@ -49,15 +42,6 @@ class HabitsViewController: UIViewController {
         super.viewDidAppear(animated)
         collectionView.reloadData()
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super .viewWillAppear(animated)
-//
-//        navigationItem.largeTitleDisplayMode = .automatic
-//                navigationController?.navigationBar.prefersLargeTitles = true
-////    }
-//        override func viewWillDisappear(_ animated: Bool) {
-//            super.viewWillDisappear(animated)
-//        }
 
     @objc func addButom(_ sender:Any) {
         let habitNC = UINavigationController(rootViewController: HabitViewController())
@@ -66,11 +50,6 @@ class HabitsViewController: UIViewController {
     }
 
     private func layout() {
-//        let statusBarFrame = UIApplication.shared.s
-//        let statusBarView = UIView(frame: statusBarFrame)
-//        self.view.addSubview(statusBarView)
-//        statusBarView.backgroundColor = UIColor(red: 0.976, green: 0.976, blue: 0.976, alpha: 1)
-
         view.addSubview(contentView)
 
         NSLayoutConstraint.activate([
@@ -114,9 +93,18 @@ extension HabitsViewController: UICollectionViewDataSource, UICollectionViewDele
         }
     }
 
+    func estimateFrameForLabel(label: String) -> CGRect {
+        let size = CGSize(width: collectionView.bounds.width - 123, height: 100)
+        let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+        let attributes = [NSAttributedString.Key.font : UIFont(name: "SFProDisplay-Semibold", size: 17)
+        ]
+        let frame = NSString(string: label).boundingRect(with: size, options: options, attributes: attributes as [NSAttributedString.Key : Any], context: nil)
+        return frame
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.bounds.width - 32)
-        let height:CGFloat = indexPath.row == 0 ? 60 : 130
+        let height:CGFloat = indexPath.row == 0 ? 60 : estimateFrameForLabel(label: HabitsStore.shared.habits[indexPath.row - 1].name).height + 109.712890625
         return CGSize(width: width, height: height)
     }
 
@@ -130,11 +118,9 @@ extension HabitsViewController: UICollectionViewDataSource, UICollectionViewDele
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row != 0{
-            let _:HabitDetailsViewController = {
-                $0.habitIndex = indexPath.row - 1
-                navigationController?.show($0, sender: .none)
-                return $0
-            }(HabitDetailsViewController())
+            let vc = HabitDetailsViewController()
+            vc.habitIndex = indexPath.row - 1
+            navigationController?.show(vc, sender: nil)
         }
     }
 }

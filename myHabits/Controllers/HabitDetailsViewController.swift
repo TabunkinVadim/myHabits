@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HabitDetailsViewController: UIViewController, HabitDetalsViewDeligate {
+class HabitDetailsViewController: UIViewController, HabitDetailsViewDeligate {
 
     var habitIndex: Int = 0
 
@@ -17,7 +17,7 @@ class HabitDetailsViewController: UIViewController, HabitDetalsViewDeligate {
         $0.delegate = self
         $0.scalesLargeContentImage = true
         $0.largeContentImage = UIImage(systemName: "checkmark.circle.fill")
-        $0.register(HabitDetailsHederView.self, forHeaderFooterViewReuseIdentifier: HabitDetailsHederView.identifier)
+        $0.register(HabitDetailsHeaderView.self, forHeaderFooterViewReuseIdentifier: HabitDetailsHeaderView.identifier)
         $0.register(DetailsTableViewCell.self, forCellReuseIdentifier: DetailsTableViewCell.identifier)
         $0.backgroundColor = .systemGray6
         $0.allowsSelection = false
@@ -28,7 +28,7 @@ class HabitDetailsViewController: UIViewController, HabitDetalsViewDeligate {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = "Привычка"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Правка", style: .plain, target: self, action: #selector(editing(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Править", style: .plain, target: self, action: #selector(editing(_:)))
         view.backgroundColor = .white
         layout()
     }
@@ -83,7 +83,7 @@ extension HabitDetailsViewController : UITableViewDelegate, UITableViewDataSourc
         44
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        tableView.dequeueReusableHeaderFooterView(withIdentifier: HabitDetailsHederView.identifier)
+        tableView.dequeueReusableHeaderFooterView(withIdentifier: HabitDetailsHeaderView.identifier)
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -14,18 +14,18 @@
 		6E16B6B227FA02DE00D469F9 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6B127FA02DE00D469F9 /* HabitsStore.swift */; };
 		6E16B6B427FA06BE00D469F9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6B327FA06BE00D469F9 /* MainTabBarController.swift */; };
 		6E16B6B627FA072200D469F9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6B527FA072200D469F9 /* InfoViewController.swift */; };
-		6E16B6BC27FB868100D469F9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6BB27FB868100D469F9 /* UIViewExtension.swift */; };
 		6E16B6BE27FCC5CD00D469F9 /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6BD27FCC5CD00D469F9 /* HabitViewController.swift */; };
 		6E16B6C427FE182F00D469F9 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E16B6C327FE182F00D469F9 /* SF-Pro-Display-Semibold.otf */; };
 		6E16B6C627FE186B00D469F9 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E16B6C527FE186B00D469F9 /* SF-Pro-Text-Regular.otf */; };
 		6E16B6CC27FF52FB00D469F9 /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6CB27FF52FB00D469F9 /* HabitCollectionViewCell.swift */; };
 		6E16B6CE27FF666200D469F9 /* StatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16B6CD27FF666200D469F9 /* StatusCollectionViewCell.swift */; };
+		6E9D02A82823EEA6000F6E91 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D02A72823EEA5000F6E91 /* UIViewExtension.swift */; };
 		6EF056552806083500C89B6D /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF056542806083500C89B6D /* UILabelExtension.swift */; };
 		6EF056592814A03C00C89B6D /* HabitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF056582814A03C00C89B6D /* HabitDetailsViewController.swift */; };
 		6EF0565B2817418E00C89B6D /* DateFormatterExtension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0565A2817418E00C89B6D /* DateFormatterExtension .swift */; };
-		6EF0565D28187F0400C89B6D /* HabitDetailsHederView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0565C28187F0400C89B6D /* HabitDetailsHederView.swift */; };
+		6EF0565D28187F0400C89B6D /* HabitDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0565C28187F0400C89B6D /* HabitDetailsHeaderView.swift */; };
 		6EF0565F281B02E300C89B6D /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0565E281B02E300C89B6D /* DetailsTableViewCell.swift */; };
-		6EF05661281D17DA00C89B6D /* HabitDetalsViewDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF05660281D17DA00C89B6D /* HabitDetalsViewDeligate.swift */; };
+		6EF05661281D17DA00C89B6D /* HabitDetailsViewDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF05660281D17DA00C89B6D /* HabitDetailsViewDeligate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,18 +38,18 @@
 		6E16B6B127FA02DE00D469F9 /* HabitsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsStore.swift; sourceTree = "<group>"; };
 		6E16B6B327FA06BE00D469F9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6E16B6B527FA072200D469F9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		6E16B6BB27FB868100D469F9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = ../../../../../../../Documents/UIViewExtension.swift; sourceTree = "<group>"; };
 		6E16B6BD27FCC5CD00D469F9 /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		6E16B6C327FE182F00D469F9 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		6E16B6C527FE186B00D469F9 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		6E16B6CB27FF52FB00D469F9 /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
 		6E16B6CD27FF666200D469F9 /* StatusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E9D02A72823EEA5000F6E91 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		6EF056542806083500C89B6D /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		6EF056582814A03C00C89B6D /* HabitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsViewController.swift; sourceTree = "<group>"; };
 		6EF0565A2817418E00C89B6D /* DateFormatterExtension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatterExtension .swift"; sourceTree = "<group>"; };
-		6EF0565C28187F0400C89B6D /* HabitDetailsHederView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsHederView.swift; sourceTree = "<group>"; };
+		6EF0565C28187F0400C89B6D /* HabitDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsHeaderView.swift; sourceTree = "<group>"; };
 		6EF0565E281B02E300C89B6D /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
-		6EF05660281D17DA00C89B6D /* HabitDetalsViewDeligate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetalsViewDeligate.swift; sourceTree = "<group>"; };
+		6EF05660281D17DA00C89B6D /* HabitDetailsViewDeligate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailsViewDeligate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			children = (
 				6E16B69A27F9FE4700D469F9 /* AppDelegate.swift */,
 				6E16B6B127FA02DE00D469F9 /* HabitsStore.swift */,
-				6EF05660281D17DA00C89B6D /* HabitDetalsViewDeligate.swift */,
+				6EF05660281D17DA00C89B6D /* HabitDetailsViewDeligate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 		6E16B6BA27FB864200D469F9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6E16B6BB27FB868100D469F9 /* UIViewExtension.swift */,
+				6E9D02A72823EEA5000F6E91 /* UIViewExtension.swift */,
 				6EF056542806083500C89B6D /* UILabelExtension.swift */,
 				6EF0565A2817418E00C89B6D /* DateFormatterExtension .swift */,
 			);
@@ -148,7 +148,7 @@
 			children = (
 				6E16B6CB27FF52FB00D469F9 /* HabitCollectionViewCell.swift */,
 				6E16B6CD27FF666200D469F9 /* StatusCollectionViewCell.swift */,
-				6EF0565C28187F0400C89B6D /* HabitDetailsHederView.swift */,
+				6EF0565C28187F0400C89B6D /* HabitDetailsHeaderView.swift */,
 				6EF0565E281B02E300C89B6D /* DetailsTableViewCell.swift */,
 			);
 			path = Cells;
@@ -225,20 +225,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E16B6BC27FB868100D469F9 /* UIViewExtension.swift in Sources */,
 				6E16B6B227FA02DE00D469F9 /* HabitsStore.swift in Sources */,
 				6E16B6CC27FF52FB00D469F9 /* HabitCollectionViewCell.swift in Sources */,
 				6E16B6BE27FCC5CD00D469F9 /* HabitViewController.swift in Sources */,
 				6EF056592814A03C00C89B6D /* HabitDetailsViewController.swift in Sources */,
 				6E16B69F27F9FE4700D469F9 /* HabitsViewController.swift in Sources */,
+				6E9D02A82823EEA6000F6E91 /* UIViewExtension.swift in Sources */,
 				6EF0565F281B02E300C89B6D /* DetailsTableViewCell.swift in Sources */,
 				6E16B6B427FA06BE00D469F9 /* MainTabBarController.swift in Sources */,
-				6EF0565D28187F0400C89B6D /* HabitDetailsHederView.swift in Sources */,
+				6EF0565D28187F0400C89B6D /* HabitDetailsHeaderView.swift in Sources */,
 				6EF0565B2817418E00C89B6D /* DateFormatterExtension .swift in Sources */,
 				6E16B6CE27FF666200D469F9 /* StatusCollectionViewCell.swift in Sources */,
 				6E16B69B27F9FE4700D469F9 /* AppDelegate.swift in Sources */,
 				6EF056552806083500C89B6D /* UILabelExtension.swift in Sources */,
-				6EF05661281D17DA00C89B6D /* HabitDetalsViewDeligate.swift in Sources */,
+				6EF05661281D17DA00C89B6D /* HabitDetailsViewDeligate.swift in Sources */,
 				6E16B6B627FA072200D469F9 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +378,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HYPX9AG362;
 				INFOPLIST_FILE = myHabits/Resourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tabunkin-Vadim.myHabits";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,7 +399,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HYPX9AG362;
 				INFOPLIST_FILE = myHabits/Resourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tabunkin-Vadim.myHabits";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
